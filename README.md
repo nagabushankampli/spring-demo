@@ -1,2 +1,2 @@
 # spring-demo
-sample project
+sample project for understanding
