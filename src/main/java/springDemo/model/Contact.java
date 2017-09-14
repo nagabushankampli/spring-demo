@@ -19,9 +19,9 @@ public class Contact {
 	
 	public Contact(int contactID,String contactName,String email,String phoneNumber){
 		this.contactID = contactID;
-		this.contactName = "contactName";
-		this.email = "email";
-		this.phoneNumber = "phoneNumber";
+		this.contactName = contactName;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
 	}
 	
 	public int getContactID() {
