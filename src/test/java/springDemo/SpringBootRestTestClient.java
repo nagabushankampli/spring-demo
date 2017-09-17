@@ -42,7 +42,7 @@ public class SpringBootRestTestClient {
 	    private static void createContact() {
 	        System.out.println("Testing create Contact API----------");
 	        RestTemplate restTemplate = new RestTemplate();
-	        Contact contact = new Contact(5,"TestRest2","Rest@Spring.com","1233");
+	        Contact contact = new Contact();
 	        URI uri = restTemplate.postForLocation(REST_SERVICE_URI+"/contact/", contact, Contact.class);
 	        System.out.println("Location : "+uri.toASCIIString());
 	    }
@@ -51,7 +51,7 @@ public class SpringBootRestTestClient {
 	    private static void updateContact() {
 	        System.out.println("Testing update Contact API----------");
 	        RestTemplate restTemplate = new RestTemplate();
-	        Contact contact  = new Contact(1,"updateRest","UpdateRest@spring.com", "1222");
+	        Contact contact  = new Contact();
 	        restTemplate.put(REST_SERVICE_URI+"/contact/1", contact);
 	        System.out.println(contact);
 	    }
