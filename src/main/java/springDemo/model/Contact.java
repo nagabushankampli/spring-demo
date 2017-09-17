@@ -32,11 +32,11 @@ public class Contact implements Serializable {
 	
 
 
-	public int getContactID() {
+	public Integer getContactID() {
 		return contactID;
 	}
 
-	public void setContactID(int contactID) {
+	public void setContactID(Integer contactID) {
 		this.contactID = contactID;
 	}
 
@@ -102,7 +102,7 @@ public class Contact implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Contact [contactID=" + contactID.intValue() + ", contactName=" + contactName + ", email=" + email
+		return "Contact [contactID=" + (contactID != null ? contactID.toString()  : "") + ", contactName=" + contactName + ", email=" + email
 				+ ", phoneNumber=" + phoneNumber + "]";
 	}
 

@@ -26,10 +26,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping ("/api")
 public class SpringDemoController {
     
-    @RequestMapping("/")
+   /* @RequestMapping("/")
     public String index() {
         return "Welcome to Spring Boot Demo!";
-    }
+    }*/
     
     public static final Logger logger = LoggerFactory.getLogger(SpringDemoController.class);
 
